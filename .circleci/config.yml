@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  publish:
     docker:
       - image: circleci/node:8.9.1
     working_directory: ~/repo
@@ -19,7 +19,7 @@ workflows:
   version: 2
   publish:
     jobs:
-      - build:
+      - publish:
           filters:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
