@@ -1,8 +1,8 @@
 {
-  "name": "@uncharted.software/stories-facets",
+  "name": "@saskcan/stories-facets",
   "main": "dist/facets.js",
   "description": "Facets Component developed by Uncharted Software",
-  "repository": "https://github.com/unchartedsoftware/stories-facets",
+  "repository": "https://github.com/saskcan/stories-facets",
   "license": "Apache-2.0",
   "version": "2.12.9",
   "devDependencies": {
