@@ -10,7 +10,7 @@ jobs:
           at: ~/stories-facets
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/stories-facets/.npmrc
       - run:
           name: Publish package
           command: npm publish --access public
