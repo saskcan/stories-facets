@@ -3,14 +3,14 @@ jobs:
   publish:
     docker:
       - image: circleci/node:8.9.1
-    working_directory: ~/repo
+    working_directory: ~/stories-facets
     steps:
+      - checkout
       - attach_workspace:
-          at: ~/repo
+          at: ~/stories-facets
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-      - checkout
       - run:
           name: Publish package
           command: npm publish --access public
@@ -20,9 +20,9 @@ workflows:
   publish:
     jobs:
       - publish:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /v[0-9]+(\.[0-9]+)*/
+        # filters:
+        #    branches:
+        #      ignore: /.*/
+        #    tags:
+        #      only: /v[0-9]+(\.[0-9]+)*/
 
