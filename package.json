@@ -4,7 +4,7 @@
   "description": "Facets Component developed by Uncharted Software",
   "repository": "https://github.com/saskcan/stories-facets",
   "license": "Apache-2.0",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "devDependencies": {
     "body-parser": "~1.13.2",
     "browserify": "^12.0.1",
